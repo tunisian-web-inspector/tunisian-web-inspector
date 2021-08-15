@@ -24,7 +24,7 @@ class ScreenshotController extends Controller
     {
         foreach (Site::find()->all() as $site) {
             if ($site->screenshot) {
-                continue;
+               // continue;
             }
             $this->stdout("Screenshoting $site\n", Console::BOLD, Console::UNDERLINE);
 
@@ -32,16 +32,16 @@ class ScreenshotController extends Controller
 
                 $alias = '@app/web/screenshots/' . $site->domain . '.png';
                 $file = \Yii::getAlias($alias);
-                if (!file_exists($file)) {
+              //  if (!file_exists($file)) {
                     $file = Check::screenshot($site->getMainUrl(), $alias);
-                }
+                //}
             } catch (\Exception $e) {
                 $file = false;
             }
             $this->stdout(($file ? "✅" : "❌") . "\n");
 
             if ($file) {
-                $site->screenshot = $file;
+                $site->screenshot = $alias;
                 $site->save();
             }
 
