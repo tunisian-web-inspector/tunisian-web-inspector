@@ -27,16 +27,6 @@ $smallLogo = Html::logo(['width' => 48, 'height' => 48, 'class' => 'rounded-circ
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-    <?php if (YII_ENV_PROD): ?>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EFN5Y2TVL6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-EFN5Y2TVL6');
-    </script>
-    <?php endif ?>
 </head>
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
@@ -86,7 +76,11 @@ HTML,
 
 <footer class="footer mt-auto py-3 text-muted">
     <div class="container">
-        <p class="float-end"><a href="https://twitter.com/mac_hour" target="_blank" rel="noopener">@mac_hour</a></p>
+        <p class="float-end">
+            <a href="<?= \yii\helpers\Url::to(['default/privacy']) ?>">Vie privée</a>
+            &mdash;
+            <a href="https://twitter.com/mac_hour" target="_blank" rel="noopener">@mac_hour</a>
+        </p>
     </div>
 </footer>
 

@@ -140,7 +140,7 @@ return [
     ],
     [
         'domain' => 'b3.interieur.gov.tn',
-        'legal_entity_id' => 3,
+        'legal_entity_id' => 5,
         'ssl' => true,
         'created_at' => '2021-08-08 00:00:00',
         'updated_at' => '2021-08-08 00:00:00',

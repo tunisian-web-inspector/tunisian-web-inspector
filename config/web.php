@@ -96,6 +96,7 @@ $config = [
             'rules' => [
                 '' => 'default/index',
                 'contact' => 'default/contact',
+                'vie-privee' => 'default/privacy',
                 'a-propos' => 'default/about',
                 'entite/<slug>' => 'legal-entity/view',
                 'entite' => 'legal-entity/index',

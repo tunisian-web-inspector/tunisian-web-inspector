@@ -49,6 +49,16 @@ class DefaultController extends Controller
     }
 
     /**
+     * Displays homepage.
+     *
+     * @return string
+     */
+    public function actionPrivacy(): string
+    {
+        return $this->render('privacy');
+    }
+
+    /**
      * Displays contact page.
      *
      * @return Response|string

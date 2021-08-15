@@ -47,4 +47,10 @@ $this->params['breadcrumbs'][] = $this->title;
         <li>Elaboration d'un manifeste pour une meilleure gestion des sites webs étatiques</li>
         <li>Devenir ministre des internets</li>
     </ol>
+
+    <hr />
+
+    <div class="small">
+        Template modifié à partir de <a href="https://github.com/StartBootstrap/startbootstrap-resume" target="_blank" rel="noreferrer">startbootstrap-resume</a>
+    </div>
 </div>
