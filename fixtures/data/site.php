@@ -218,7 +218,6 @@ return [
     [
         'domain' => 'www.transport.tn',
         'legal_entity_id' => 7,
-        'aliases' => 'www.mehat.gov.tn',
         'ssl' => false,
         'created_at' => '2021-08-08 00:00:00',
         'updated_at' => '2021-08-08 00:00:00',
@@ -248,6 +247,7 @@ return [
     [
         'domain' => 'www.equipement.tn',
         'legal_entity_id' => 9,
+        'aliases' => 'www.mehat.gov.tn',
         'ssl' => false,
         'created_at' => '2021-08-08 00:00:00',
         'updated_at' => '2021-08-08 00:00:00',

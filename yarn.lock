@@ -890,6 +890,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/hind-madurai/-/hind-madurai-4.5.0.tgz#fe58a2aaacac058cafa84d5ea3f361754d163a89"
   integrity sha512-x+mFjD2IdjcqqaLN0gHBH8Dx40HCUfEdxXTjw+nbLj7oAuOCUcMlcfjVB7k1idbSxCY0A0GP4a0rX1gIc0fUXw==
 
+"@fontsource/saira-extra-condensed@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/saira-extra-condensed/-/saira-extra-condensed-4.5.0.tgz#5945066705752576f10447a9b76c2b41198fc496"
+  integrity sha512-JEL6e7xaAHTMv2TMByZmYM6CJdhx4SH7YWHs10JFCtGHPA8hl5HDazDCxjaZQkERdwN/QA53TWrmyhOTKtHAPw==
+
 "@nesk/rialto@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@nesk/rialto/-/rialto-1.4.0.tgz#8941a535e482720e4776717e6991cd03bc56123f"

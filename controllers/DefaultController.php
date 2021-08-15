@@ -37,11 +37,14 @@ class DefaultController extends Controller
      */
     public function actionIndex(): string
     {
+        $entities = LegalEntity::find()->with('sites')->all();
+
         return $this->render('index', [
             'counts' => [
                 'legalEntities' => LegalEntity::find()->count(),
                 'sites' => Site::find()->count(),
             ],
+            'entities' => $entities,
         ]);
     }
 

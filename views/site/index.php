@@ -10,14 +10,15 @@ use yii\grid\GridView;
 use yii\helpers\Url;
 use yii\widgets\Pjax;
 
-$this->title = 'Website Checker';
+$this->title = 'Sites';
+$this->params['breadcrumbs'][] = $this->title;
 
 ?>
 <div class="site-index">
     <?php Pjax::begin() ?>
-    <?= GridView::widget([
+    <?= \yii\widgets\ListView::widget([
         'dataProvider' => $dataProvider,
-        'tableOptions' => ['class' => 'table table-striped table-bordered table-sm'],
+        'itemView' => '_site-list-view',
         'layout' => <<<HTML
 <div class="table-responsive" style="background: none;border:none;">
     {items}
@@ -32,25 +33,7 @@ $this->title = 'Website Checker';
 </div>
 
 HTML,
-        'columns' => [
-            [
-                'format' => 'raw',
-                'value' => function (Site $site) {
-                    return Html::a(Html::fa('eye'), Url::to(['site/view', 'domain' => $site->domain]), ['data-pjax' => 0]);
-                },
-            ],
-            [
-                'format' => 'raw',
-                'value' => function (Site $site) {
-        if ($site->screenshot) {
-            return Html::img($site->screenshotUrl, ['alt' => 'Capture d\'écran de ' . $site->domain, 'class' => 'img-fluid', 'style' => 'width: 100px']);
-        }
-                    return null;
-                },
-            ],
-            'domain',
-            'legalEntity',
-        ],
+
     ]) ?>
     <?php Pjax::end() ?>
 </div>

@@ -45,7 +45,7 @@ class Site extends \yii\db\ActiveRecord
             [['created_at', 'updated_at'], 'safe'],
             [['domain', 'name'], 'string', 'max' => 255],
             [['domain'], 'unique'],
-            [['legal_entity_id'], 'exist', 'skipOnError' => true, 'targetClass' => LegalEntity::className(), 'targetAttribute' => ['legal_entity_id' => 'id']],
+            [['legal_entity_id'], 'exist', 'skipOnError' => true, 'targetClass' => LegalEntity::class, 'targetAttribute' => ['legal_entity_id' => 'id']],
         ];
     }
 
@@ -66,11 +66,11 @@ class Site extends \yii\db\ActiveRecord
 
     public function getLegalEntity(): \yii\db\ActiveQuery
     {
-        return $this->hasOne(LegalEntity::className(), ['id' => 'legal_entity_id']);
+        return $this->hasOne(LegalEntity::class, ['id' => 'legal_entity_id']);
     }
 
     public function getScreenshotUrl($size = false): string
     {
-        return str_replace('@app', '', $this->screenshot);
+        return str_replace('@app/web/', '', $this->screenshot);
     }
 }

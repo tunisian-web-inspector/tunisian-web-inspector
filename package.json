@@ -29,6 +29,7 @@
     },
     "dependencies": {
         "@fontsource/hind-madurai": "^4.2.2",
+        "@fontsource/saira-extra-condensed": "^4.5.0",
         "@nesk/rialto": "^1.4.0",
         "@popperjs/core": "^2.9.1",
         "@yiidk/font-awesome": "git+ssh://git@bitbucket.org:yiidk/font-awesome.git",

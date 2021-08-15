@@ -6,8 +6,8 @@ $params = array_merge(
 );
 
 $config = [
-    'id' => 'tn-web-watch',
-    'name' => 'TN Web Watch',
+    'id' => 'tn-web-inspector',
+    'name' => 'TN Web Inspector',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'defaultRoute' => 'default',
@@ -16,6 +16,7 @@ $config = [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+        '@web'   => '@app/web',
     ],
     'container' => [
         'definitions' => [
