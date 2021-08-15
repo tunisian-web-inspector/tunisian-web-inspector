@@ -1,0 +1,41 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "TN Web Watch frontend",
+    "main": "index.js",
+    "author": "Mehdi Achour",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "dev": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "production": "mix --production",
+        "prod": "mix --production"
+    },
+    "devDependencies": {
+        "@types/jquery": "^3.5.6",
+        "browser-sync": "^2.26.14",
+        "browser-sync-webpack-plugin": "2.2.2",
+        "laravel-mix": "^6.0.13",
+        "laravel-mix-bundle-analyzer": "^1.0.5",
+        "postcss": "^8.1",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "1.32.*",
+        "sass-loader": "10.*",
+        "ts-loader": "^8.0.18",
+        "typescript": "^4.2.3"
+    },
+    "dependencies": {
+        "@fontsource/hind-madurai": "^4.2.2",
+        "@nesk/rialto": "^1.4.0",
+        "@popperjs/core": "^2.9.1",
+        "@yiidk/font-awesome": "git+ssh://git@bitbucket.org:yiidk/font-awesome.git",
+        "axios": "^0.21.1",
+        "bootstrap": "5.1.0",
+        "jquery": "^3.6.0",
+        "puppeteer": "~5.5.0",
+        "yii2-pjax": "^2.0.7"
+    }
+}

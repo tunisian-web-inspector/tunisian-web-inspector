@@ -2,10 +2,10 @@
 
 namespace app\controllers;
 
-use Yii;
+use app\models\Site;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
-use yii\web\Response;
-use app\models\ContactForm;
+use yii\web\NotFoundHttpException;
 
 class SiteController extends Controller
 {
@@ -13,7 +13,7 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function actions()
+    public function actions(): array
     {
         return [
             'error' => [
@@ -31,36 +31,29 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
+    public function actionIndex(): string
     {
-        return $this->render('index');
-    }
+        $dataProvider = new ActiveDataProvider(['query' => Site::find()->with('legalEntity')]);
 
-    /**
-     * Displays contact page.
-     *
-     * @return Response|string
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
+        return $this->render('index', [
+            'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays about page.
-     *
-     * @return string
+     * @throws NotFoundHttpException
      */
-    public function actionAbout()
+    public function actionView($domain): string
     {
-        return $this->render('about');
+        $model = Site::findOne(['domain' => $domain]);
+
+        if (!$model) {
+            throw new NotFoundHttpException("Site non existant.");
+        }
+
+        return $this->render('view', [
+            'model' => $model
+        ]);
     }
+
 }

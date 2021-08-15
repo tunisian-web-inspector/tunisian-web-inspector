@@ -1,7 +1,9 @@
 <?php
 
-$params = require __DIR__ . '/params.php';
-$db = require __DIR__ . '/db.php';
+$params = array_merge(
+    require __DIR__ . '/params.php',
+    require __DIR__ . '/params-local.php',
+);
 
 $config = [
     'id' => 'basic-console',
@@ -25,16 +27,26 @@ $config = [
                 ],
             ],
         ],
-        'db' => $db,
-    ],
-    'params' => $params,
-    /*
-    'controllerMap' => [
-        'fixture' => [ // Fixture generation command line.
-            'class' => 'yii\faker\FixtureController',
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => $params['db.dsn'],
+            'username' => $params['db.username'],
+            'password' => $params['db.password'],
+            'charset' => 'utf8',
+
+            // Schema cache options (for production environment)
+            //'enableSchemaCache' => true,
+            //'schemaCacheDuration' => 60,
+            //'schemaCache' => 'cache',
         ],
     ],
-    */
+    'params' => $params,
+    'controllerMap' => [
+        'fixture' => [ // Fixture generation command line.
+            'class' => 'yii\console\controllers\FixtureController',
+            'namespace' => 'app\fixtures',
+        ],
+    ],
 ];
 
 if (YII_ENV_DEV) {

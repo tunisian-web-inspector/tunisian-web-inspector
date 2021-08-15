@@ -1,31 +1,28 @@
 <?php
-/**
- * @link http://www.yiiframework.com/
- * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
- */
 
 namespace app\assets;
 
-use yii\web\AssetBundle;
+use yii\bootstrap5\BootstrapAsset;
+use yii\bootstrap5\BootstrapPluginAsset;
+use yii\web\YiiAsset;
 
 /**
- * Main application asset bundle.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
+ * Main frontend application asset bundle.
  */
-class AppAsset extends AssetBundle
+class AppAsset extends EnvironmentAwareAssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+        'css/vendor.css',
+        'css/theme.tww.css',
     ];
     public $js = [
+        'js/manifest.js',
+        'js/vendor.js',
+        'js/frontend.js',
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap4\BootstrapAsset',
+        YiiAsset::class,
+        BootstrapAsset::class,
+        BootstrapPluginAsset::class,
     ];
 }

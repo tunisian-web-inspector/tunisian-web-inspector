@@ -1,0 +1,62 @@
+$font-family-sans-serif: "Hind Madurai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$primary: #655af3 !default;
+$secondary: #323232 !default;;
+$body-color: #3d3d3d !default;
+$body-bg: #fff !default;
+
+
+$h1-font-size: 2rem;
+$h2-font-size: 1.6rem;
+$h3-font-size: 1.2rem;
+
+$border-color: #ccc !default;
+//$border-radius: 0;
+
+$input-bg: #fff !default;
+$input-color: #495057 !default;
+$input-border-color: #ced4da !default;
+
+$navbar-dark-color: #fff;
+$navbar-dark-toggler-border-color: transparent;
+//$nav-link-hover-color: $primary;
+
+$btn-font-weight: 500;
+//$btn-border-radius: 0;
+//$btn-border-radius-sm: 0;
+//$btn-border-radius-lg: 0;
+$btn-line-height: 1.5;
+
+$tooltip-color: #ffffff;
+$tooltip-bg: var(--bs-primary);
+
+$pagination-bg: $body-bg;
+$pagination-color: #666;
+$pagination-border-color: $border-color;
+$pagination-hover-bg: #fff;
+$pagination-hover-border-color: var(--bs-primary);
+
+$card-bg: #f8f8f8!default;
+$card-cap-bg: $card-bg;
+
+$link-hover-decoration: none;
+$link-decoration: none;
+
+$label-margin-bottom: .125rem;
+
+$form-feedback-icon-valid: none;
+$form-feedback-icon-invalid: none;
+
+$form-floating-label-opacity: 1;
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Spacing variable to set the sidebar base width
+
+$sidebar-base-width: 14rem;
+
+// Spacing variable to add padding to the top of the body element that matches the height of the navbar
+
+$navbar-base-height: 3.375rem;

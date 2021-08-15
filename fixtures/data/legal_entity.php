@@ -1,0 +1,142 @@
+<?php
+
+return [
+    [
+        'id' => 1,
+        'name' => 'Présidence du gouvernement',
+        'slug' => 'presidence-du-gouvernement',
+        'email' => 'boc@pm.gov.tn',
+    ],
+    [
+        'id' => 2,
+        'name' => 'Ministère de la Défense Nationale',
+        'slug' => 'ministere-de-la-defense-nationale',
+        'email' => 'defcab@defense.tn',
+    ],
+    [
+        'id' => 3,
+        'name' => 'Ministère de la justice',
+        'slug' => 'ministere-de-la-justice',
+        'email' => 'info@e-justice.tn',
+    ],
+    [
+        'id' => 4,
+        'name' => 'Ministère des affaires étrangères, de la migration et des tunisiens à l\'étranger',
+        'slug' => 'ministere-des-affaires-etrangeres-de-la-migration-et-des-tunisiens-a-l-etranger',
+        'email' => 'email.dct@diplomatie.gov.tn',
+    ],
+    [
+        'id' => 5,
+        'name' => 'Ministère de l\'intérieur',
+        'slug' => 'ministere-de-l-interieur',
+        'email' => 'boc@interieur.gov.tn',
+    ],
+    [
+        'id' => 6,
+        'name' => 'Ministère de l\'économie, des finances et de l\'appui à l\'investissement',
+        'slug' => 'ministere-de-l-economie-des-finances-et-de-l-appui-a-l-investissement',
+        'email' => 'brc@finances.tn',
+    ],
+    [
+        'id' => 7,
+        'name' => 'Ministère des Transports et de la Logistique',
+        'slug' => 'ministere-des-transports-et-de-la-logistique',
+        'email' => 'boc@transport.state.tn',
+    ],
+    [
+        'id' => 8,
+        'name' => 'Ministère des technologies de la communication',
+        'slug' => 'ministere-des-technologies-de-la-communication',
+        'email' => 'brc.mtc@tunisia.gov.tn',
+    ],
+    [
+        'id' => 9,
+        'name' => 'Ministère de l\'Equipement, de l\'Habitat et de l\'Infrastructure',
+        'slug' => 'ministere-de-l-equipement-de-l-habitat-et-de-l-infrastructure',
+        'email' => 'brc@mehat.gov.tn',
+    ],
+    [
+        'id' => 10,
+        'name' => 'Ministère de l\'Industrie, de l\'Energie et des Mines',
+        'slug' => 'ministere-de-l-Industrie-de-l-energie-et-des-mines',
+        'email' => 'contact.industrie@tunisia.gov.tn',
+    ],
+    [
+        'id' => 11,
+        'name' => 'Ministère du Commerce et du Développement des Exportations',
+        'slug' => 'ministere-du-commerce-et-du-developpement-des-exportations',
+        'email' => 'mincom.brc@tunisia.gov.tn',
+    ],
+    [
+        'id' => 12,
+        'name' => 'Ministère de l\'Agriculture, des Ressources Hydrauliques et de la Pêche Maritime',
+        'slug' => 'ministere-de-l-agriculture-des-ressources-hydrauliques-et-de-la-peche-maritime',
+        'email' => 'bo.brcmarh@iresa.agrinet.tn',
+    ],
+    [
+        'id' => 13,
+        'name' => 'Ministère du Tourisme',
+        'slug' => 'ministere-du-tourisme',
+        'email' => 'boc@tourisme.gov.tn',
+    ],
+    [
+        'id' => 14,
+        'name' => 'Ministère des Domaines de l\'Etat et des Affaires Foncières',
+        'slug' => 'ministere-des-domaines-de-l-etat-et-des-affaires-foncieres',
+        'email' => 'brc@domainetat.tn',
+    ],
+    [
+        'id' => 15,
+        'name' => 'Ministère de la santé publique',
+        'slug' => 'ministere-de-la-sante-publique',
+        'email' => 'relation.citoyen@rns.tn',
+    ],
+    [
+        'id' => 16,
+        'name' => 'Ministère des Affaires Sociales',
+        'slug' => 'ministere-des-affaires-sociales',
+        'email' => 'mas@social.gov.tn',
+    ],
+    [
+        'id' => 17,
+        'name' => 'Ministère de l\'éducation',
+        'slug' => 'ministere-de-l-education',
+        'email' => 'ministere@minedu.edunet.tn',
+    ],
+    [
+        'id' => 18,
+        'name' => 'Ministère de l\'enseignement supérieur et de la recherche scientifique',
+        'slug' => 'ministere-de-l-enseignement-superieur-et-de-la-recherche-scientifique',
+        'email' => 'brc.mesrs@mes.rnu.tn',
+    ],
+    [
+        'id' => 19,
+        'name' => 'Ministère de la Jeunesse, des Sports et de l\'Intégration Professionnelle',
+        'slug' => 'ministere-de-la-jeunesse-des-sports-et-de-l-integration-professionnelle',
+        'email' => 'mjsep@mjs.tn',
+    ],
+    [
+        'id' => 20,
+        'name' => 'Ministère des affaires culturelles',
+        'slug' => 'ministere-des-affaires-culturelles',
+        'email' => 'contact.culture@mac.gov.tn',
+    ],
+    [
+        'id' => 21,
+        'name' => 'Ministère de la Femme, de la Famille et des Personnes Âgées',
+        'slug' => 'ministere-de-la-femme-de-la-famille-et-des-personnes-agees',
+        'email' => 'boc@maffepa.gov.tn',
+    ],
+    [
+        'id' => 22,
+        'name' => 'Ministère des Affaires Religieuses',
+        'slug' => 'ministere-des-affaires-religieuses',
+        'email' => 'brc@affaires-religieuses.tn',
+    ],
+    [
+        'id' => 23,
+        'name' => 'Ministère des Affaires Locales et de l\'Environnement',
+        'slug' => 'ministere-des-affaires-locales-et-de-l-environnement',
+        'email' => 'contact@minal.state.tn',
+    ],
+];
