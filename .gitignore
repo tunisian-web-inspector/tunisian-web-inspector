@@ -34,3 +34,8 @@ tests/_support/_generated
 /.vagrant
 
 /config/*-local.php
+
+/web/index.php
+/web/index-test.php
+
+/.htaccess

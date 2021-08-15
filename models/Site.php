@@ -69,8 +69,8 @@ class Site extends \yii\db\ActiveRecord
         return $this->hasOne(LegalEntity::className(), ['id' => 'legal_entity_id']);
     }
 
-    public function getScreenshotUrl(): string
+    public function getScreenshotUrl($size = false): string
     {
-        return str_replace('@app/web', '', $this->screenshot);
+        return str_replace('@app', '', $this->screenshot);
     }
 }
