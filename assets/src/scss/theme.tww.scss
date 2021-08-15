@@ -2,7 +2,7 @@
 @import "components/sidenav";
 
 main > .container {
-  padding: 90px 15px 20px;
+  padding: 100px 15px 20px;
 }
 
 @include media-breakpoint-up(lg) {
@@ -11,7 +11,7 @@ main > .container {
     padding-left: $sidebar-base-width;
   }
 
-  
+
   main > .container {
     padding: 20px 15px 20px;
   }
