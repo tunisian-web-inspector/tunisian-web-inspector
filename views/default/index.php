@@ -19,11 +19,11 @@ $this->title = 'Bienvenue sur Tunisian Web Inspector';
 <div class="alert alert-warning">
 
     <h2 class="mb-3"><?= Html::fa('bullhorn', ['class' => 'me-2']) ?> Phase 1: Collecte de données</h2>
-    <p>Je suis actuellement en phase de collecte de données.</p>
-    <p class="mb-0">
+    <p>
         N'hésitez pas à contribuer un site web si vous ne le trouvez pas listé ici. Vous pouvez
         <?= Html::a('remplir ce formulaire', ['default/contact']) ?> ou <?= Html::a('me contacter sur Twitter', 'https://twitter.com/mac_hour') ?>
     </p>
+    <p class="mb-0"><i><b><?= $counts['sites'] - 62 ?></b> sites contribués à cette liste depuis le lancement ! Merci</i></p>
 </div>
 
 <p>
