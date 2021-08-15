@@ -64,6 +64,6 @@ class LegalEntity extends \yii\db\ActiveRecord
      */
     public function getSites(): \yii\db\ActiveQuery
     {
-        return $this->hasMany(Site::className(), ['legal_entity_id' => 'id']);
+        return $this->hasMany(Site::class, ['legal_entity_id' => 'id'])->orderBy(['site.domain' => SORT_ASC]);
     }
 }
