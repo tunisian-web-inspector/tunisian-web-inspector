@@ -13,6 +13,9 @@ use yii\bootstrap5\NavBar;
 
 AppAsset::register($this);
 
+isset($this->params['description']) && $this->registerMetaTag(['name' => 'description', 'property' => 'og:description', 'content' => $this->params['description']]);
+isset($this->params['keywords']) && $this->registerMetaTag(['name' => 'keywords', 'content' => $this->params['keywords']]);
+
 $siteName = Yii::$app->name;
 $siteLogo = Html::logo(['class' => 'rounded-circle img-fluid img-profile mx-auto']);
 $smallLogo = Html::logo(['width' => 48, 'height' => 48, 'class' => 'rounded-circle img-fluid img-profile mx-auto']);
@@ -24,6 +27,7 @@ $smallLogo = Html::logo(['width' => 48, 'height' => 48, 'class' => 'rounded-circ
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#655af3"/>
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>

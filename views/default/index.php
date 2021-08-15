@@ -8,6 +8,8 @@ use app\helpers\Html;
 
 $this->title = 'Bienvenue sur Tunisian Web Inspector';
 
+$this->params['description'] = 'Site visant à améliorer la qualité des sites web gouvernementaux en Tunisie';
+
 ?>
 
 <h1 class="mb-3">Tunisian Web <span class="text-primary">Inspector</span></h1>
@@ -38,7 +40,7 @@ $this->title = 'Bienvenue sur Tunisian Web Inspector';
     <ul>
         <?php foreach ($entity->sites as $site): ?>
             <li class="mb-1">
-                <a href="<?= $site->getMainUrl() ?>" rel="nofollow" target="_blank"><?= $site->domain ?></a>
+                <a href="<?= $site->getMainUrl() ?>" rel="noopener" target="_blank"><?= $site->domain ?></a>
                 <?php if ($site->aliases) : ?>
                 <small class="text-muted">(Alias connus: <?= $site->aliases ?>)</small>
                 <?php endif ?>
