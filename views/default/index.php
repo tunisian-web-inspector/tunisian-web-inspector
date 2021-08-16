@@ -41,6 +41,9 @@ $this->params['description'] = 'Site visant à améliorer la qualité des sites 
         <?php foreach ($entity->sites as $site): ?>
             <li class="mb-1">
                 <a href="<?= $site->getMainUrl() ?>" rel="noopener" target="_blank"><?= $site->domain ?></a>
+                <?php if ($site->name) : ?>
+                <span class="d-block d-md-inline text-muted"><?= $site->name ?></span>
+                <?php endif ?>
                 <?php if ($site->aliases) : ?>
                 <small class="text-muted">(Alias connus: <?= $site->aliases ?>)</small>
                 <?php endif ?>
